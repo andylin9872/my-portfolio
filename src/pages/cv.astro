@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv" mainClass="w-full max-w-full lg:max-w-[1400px]">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Resume</div>
+  </div>
+
+  <div class="mb-10">
+    <iframe src="/CV.pdf" class="w-full h-[800px]" title="CV"></iframe>
+    <div class="mt-4 flex justify-center">
+      <a href="/CV.pdf" download class="btn btn-primary">Download CV</a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Brain Aging Simulation & Optical Modeling"
+    img="/aged_project.png"
+    desc="Engineered a dynamic 3D brain optical model to simulate physiological aging and predict optical signal loss."
+    url="/projects/brain-aging"
+    badge="MATLAB"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="EIT-Based Muscle Motion Analysis System"
+    img="/EIT_project.png"
+    desc="Built a custom EIT hardware system with signal reconstruction pipelines for real-time visualization of muscle contraction."
+    url="/projects/eit-muscle-motion"
+    badge="Hardware"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Portable Multimodal Cardiac Screening System"
+    img="/cardiac_project.png"
+    desc="Designed a low-power wearable with on-device CNN inference for real-time cardiac abnormality detection."
+    url="/projects/cardiac-screening"
+    badge="Edge AI"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Interactive Star Trail Visualization Tool"
+    img="/street_project.png"
+    desc="Developed a browser extension integrating Google Street View to visualize astronomical data with field of view overlays."
+    url="/projects/star-trail-tool"
+    badge="Web"
+    target="_self"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Ongoing Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Offline UAV Visual Navigation Control System"
+    img="/black_placeholder.png"
+    desc="Designed a GPS-independent offline UAV control architecture using image comparison (Map Matching) for positioning and navigation."
+    url="/projects/offline-uav"
+    badge="Ongoing"
+    target="_self"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="iOS Long Exposure Photography App"
+    img="/black_placeholder.png"
+    desc="Designed and developed an iOS camera app using computational photography to simulate long exposure effects by stacking multiple short-exposure photos."
+    url="/projects/ios-long-exposure"
+    badge="Ongoing"
+    target="_self"
+  />
+</BaseLayout>

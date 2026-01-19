@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact" sideBarActiveItemID="contact">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Contact</div>
+  </div>
+
+  <div class="mb-10 w-full">
+    <div class="text-lg mb-5">
+      Feel free to reach out to me via email or connect with me on social media.
+    </div>
+
+    <div class="card bg-base-100 shadow-xl image-full">
+        <div class="card-body">
+            <h2 class="card-title">Email</h2>
+            <p>r14k47015@g.ntu.edu.tw</p>
+            <div class="card-actions justify-end">
+                <a href="mailto:r14k47015@g.ntu.edu.tw" class="btn btn-primary">Send Email</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="text-2xl font-bold mb-5">Socials</div>
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li><a href="https://github.com/andylin9872" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yihua-lin-970950367" target="_blank">LinkedIn</a></li>
+    </ul>
+
+  </div>
+</BaseLayout>
